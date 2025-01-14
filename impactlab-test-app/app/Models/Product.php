@@ -19,4 +19,15 @@ class Product extends Model
     {
         return $this->belongsToMany(Order::class)->withPivot('quantity');
     }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    // get average rating
+    public function getAverageRating()
+    {
+        return $this->reviews()->avg('rating');
+    }
 }
