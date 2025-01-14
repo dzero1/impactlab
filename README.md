@@ -1,4 +1,4 @@
-# Additional Instructions the app
+# Additional Instructions for the app
 
 Challenge 1: 
     please use 1_programming_challenges.php file.
